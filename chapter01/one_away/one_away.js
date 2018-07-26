@@ -1,14 +1,11 @@
 export function oneAway(left, right) {
-  const lenLeft = left.length;
-  const lenRight = right.length;
-
-  if (Math.abs(lenLeft - lenRight) > 1) {
+  if (Math.abs(left.length - right.length) > 1) {
     return false;
   }
 
   for (
     let diff = 0, indexLeft = 0, indexRight = 0;
-    indexLeft < lenLeft && indexRight < lenRight;
+    indexLeft < left.length && indexRight < right.length;
     ++indexLeft, ++indexRight
   ) {
     if (left[indexLeft] !== right[indexRight]) {

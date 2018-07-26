@@ -1,8 +1,6 @@
 
 export function hasUniqueChars(str) {
-  const len = str.length;
-
-  if (len > 128) {
+  if (str.length > 128) {
     return false;
   }
 
@@ -10,14 +8,12 @@ export function hasUniqueChars(str) {
 }
 
 export function hasUniqueCharsNoDataStructs(str) {
-  const len = str.length;
-
-  if (len > 128) {
+  if (str.length > 128) {
     return false;
   }
 
-  for (let i = 0; i < len; i += 1) {
-    for (let j = i + 1; j < len; j += 1) {
+  for (let i = 0; i < str.length; i += 1) {
+    for (let j = i + 1; j < str.length; j += 1) {
       if (str[i] === str[j]) {
         return false;
       }
