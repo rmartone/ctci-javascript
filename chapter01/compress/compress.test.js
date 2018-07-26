@@ -11,3 +11,8 @@ const str2Out = 'a2b1c5a3';
 test('compress string test #2', () => {
   expect(compress(str2In)).toMatch(str2Out);
 });
+
+const str3 = 'ab';
+test('compress string test #3', () => {
+  expect(compress(str3)).toMatch(str3);
+});
