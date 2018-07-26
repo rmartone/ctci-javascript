@@ -1,4 +1,4 @@
-import { rotate } from './rotate';
+import { rotateMatrix } from './rotate_matrix';
 
 /*
    a b    c a
@@ -7,7 +7,7 @@ import { rotate } from './rotate';
 const matrix1 = [['a', 'b'], ['c', 'd']];
 const matrix2 = [['c', 'a'], ['d', 'b']];
 test('rotate matrix test #1', () => {
-  expect(rotate(matrix1)).toEqual(matrix2);
+  expect(rotateMatrix(matrix1)).toEqual(matrix2);
 });
 
 /*
@@ -18,5 +18,5 @@ test('rotate matrix test #1', () => {
 const matrix3 = [['a', 'b', 'c'], ['d', 'e', 'f'], ['g', 'h', 'i']];
 const matrix4 = [['g', 'd', 'a'], ['h', 'e', 'b'], ['i', 'f', 'c']];
 test('rotate matrix test #2', () => {
-  expect(rotate(matrix3)).toEqual(matrix4);
+  expect(rotateMatrix(matrix3)).toEqual(matrix4);
 });

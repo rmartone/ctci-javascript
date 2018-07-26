@@ -1,4 +1,4 @@
-export function rotate(matrix) {
+export function rotateMatrix(matrix) {
   if (!matrix) {
     throw new Error('invalid matrix');
   }
