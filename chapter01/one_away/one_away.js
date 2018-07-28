@@ -1,3 +1,12 @@
+/**
+ * There are three types of edits that can be performed on strings:
+ * insert a character, remove a character, or replace a character.
+ * Given two valid strings, return true if they are one or fewer edits
+ * away from one another.
+ * @param {.} left string
+ * @param {*} right string
+ * @return true or false
+ */
 export function oneAway(left, right) {
   if (Math.abs(left.length - right.length) > 1) {
     return false;

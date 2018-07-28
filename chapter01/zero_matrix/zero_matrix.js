@@ -1,15 +1,17 @@
+/**
+ * Given an NxN matrix if an element is 0, its entire row
+ * and column are set to 0.
+ * @param {*} valid matrix (non-null...)
+ * @return zero'd matrix
+ */
 export function zeroMatrix(matrix) {
-  if (!matrix) {
-    throw new Error('invalid matrix');
-  }
-
   if (matrix.length === 0) {
     return matrix;
   }
 
   let rows = new Array(matrix.length);
   rows.fill(false);
-  
+
   let cols = new Array(matrix[0].length);
   cols.fill(false);
 

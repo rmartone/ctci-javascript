@@ -1,8 +1,10 @@
+/**
+ * Given an image represented by an NxN matrix, write a method to rotate
+ * the matrix 90 degrees clockwise (in-place && O(n**2)).
+ * @param {*} matrix non-null 2D array
+ * @return rotated matrix
+ */
 export function rotateMatrix(matrix) {
-  if (!matrix) {
-    throw new Error('invalid matrix');
-  }
-
   if (matrix.length === 0) {
     return matrix;
   }

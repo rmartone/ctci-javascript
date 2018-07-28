@@ -1,3 +1,8 @@
+/**
+ * Checks if a string is a permutation of a palindrome.
+ * @param str a valid string
+ * @return true if it's a permutation of a plaindrome or false
+ */
 export function isPermutationOfPalindrome(str) {
   // ignore whitespace and case
   const strCopy = str.replace(/[^\w]/g, '').toLowerCase();

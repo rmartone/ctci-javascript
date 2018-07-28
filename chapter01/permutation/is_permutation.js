@@ -1,4 +1,9 @@
-
+/**
+ * Given two valid strings, decide if one is a permutation of the other.
+ * @param s1 string
+ * @param s2 string
+ * @return true or false
+ */
 export function isPermutation(s1, s2) {
   return s1.length === s2.length ? objectsEqual(toMap(s1), toMap(s2)) : false;
 }
