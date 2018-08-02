@@ -16,4 +16,4 @@ Checkout this repo, install dependencies and enjoy!
 
 To run tests
 ```console
-> npm test
+> npm run test
