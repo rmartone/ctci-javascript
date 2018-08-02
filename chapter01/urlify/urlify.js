@@ -1,6 +1,6 @@
 
 /**
- * Replace all spaces in a string with '%20.
+ * Replace all spaces in a string with '%20'.
  * @param str a valid string
  * @return str where spaces are replaced with %20
  */

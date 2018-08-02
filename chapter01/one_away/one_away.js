@@ -8,21 +8,23 @@
  * @return true or false
  */
 export function oneAway(left, right) {
+  // lengths differ by more than one?
   if (Math.abs(left.length - right.length) > 1) {
     return false;
   }
 
   for (
     let diff = 0, indexLeft = 0, indexRight = 0;
-    indexLeft < left.length && indexRight < right.length;
+    indexLeft < left.length || indexRight < right.length;
     ++indexLeft, ++indexRight
   ) {
+    console.log(left[indexLeft])
     if (left[indexLeft] !== right[indexRight]) {
       // is there more than one diff?
       if (++diff === 2) {
         return false;
       }
-
+      // when the current chars differ, increment R/L index if appropriate
       if (left[indexLeft + 1] === right[indexRight]) {
         // char inserted in left string or removed from right
         ++indexLeft;
