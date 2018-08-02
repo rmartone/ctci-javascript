@@ -18,7 +18,6 @@ export function oneAway(left, right) {
     indexLeft < left.length || indexRight < right.length;
     ++indexLeft, ++indexRight
   ) {
-    console.log(left[indexLeft])
     if (left[indexLeft] !== right[indexRight]) {
       // is there more than one diff?
       if (++diff === 2) {
