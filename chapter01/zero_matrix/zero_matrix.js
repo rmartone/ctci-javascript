@@ -18,8 +18,7 @@ export function zeroMatrix(matrix) {
   for (let i = 0; i < rows.length; ++i) {
     for (let j = 0; j < cols.length; ++j) {
       if (matrix[i][j] === 0) {
-        rows[i] = true;
-        cols[j] = true;
+        rows[i] = cols[j] = true;
       }
     }
   }
