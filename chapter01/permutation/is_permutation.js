@@ -19,7 +19,7 @@ function toMap(s) {
   return map;
 }
 
-// are two objects qual
+// are two objects equal
 function isEqual(o1, o2) {
   // arrays for property names
   const keys1 = Object.getOwnPropertyNames(o1);
